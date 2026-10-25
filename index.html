@@ -1,0 +1,21 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#008080"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Mi Win98"><meta name="description" content="Un pequeño escritorio retro con juegos y utilidades reales."><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/svg+xml" href="icons/icon.svg"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="stylesheet" href="style.css"><title>Mi pequeño Windows 98</title></head><body>
+<div id="desktop" class="desktop theme-teal"><div class="wallpaper-art" aria-hidden="true"><span class="big-stamp">98</span><span class="wallpaper-caption">mi rincón en el ordenador</span></div>
+<div id="desktopIcons" class="desktop-icons" aria-label="Iconos del escritorio">
+<button class="desktop-icon" data-open="computer"><span class="pixicon">🖥️</span><span>Mi PC</span></button>
+<button class="desktop-icon" data-open="notes"><span class="pixicon">📝</span><span>Bloc de notas</span></button>
+<button class="desktop-icon" data-open="calculator"><span class="pixicon">🧮</span><span>Calculadora</span></button>
+<button class="desktop-icon" data-open="mines"><span class="pixicon">💣</span><span>Buscaminas</span></button>
+<button class="desktop-icon" data-open="paint"><span class="pixicon">🎨</span><span>Paint 98</span></button>
+<button class="desktop-icon" data-open="snake"><span class="pixicon">🐍</span><span>Snake</span></button>
+<button class="desktop-icon" data-open="memory"><span class="pixicon">🃏</span><span>Parejas</span></button>
+<button class="desktop-icon" data-open="agenda"><span class="pixicon">📅</span><span>Agenda</span></button>
+<button class="desktop-icon" data-open="terminal"><span class="pixicon">⬛</span><span>MS-DOS</span></button>
+<button class="desktop-icon" data-open="settings"><span class="pixicon">⚙️</span><span>Panel de control</span></button>
+<button class="desktop-icon" data-open="trash"><span class="pixicon">🗑️</span><span>Papelera</span></button>
+<button class="desktop-icon" data-open="about"><span class="pixicon">💾</span><span>Leeme.txt</span></button>
+</div>
+<div id="windowLayer" class="window-layer" aria-live="off"></div>
+<div id="startMenu" class="start-menu" hidden><div class="start-menu-banner">MICRO<span>SOFT?</span> <b>98</b></div><div class="start-menu-items"><div class="menu-small">PROGRAMAS</div><button data-open="computer">🖥️ <span>Mi PC</span></button><button data-open="notes">📝 <span>Bloc de notas</span></button><button data-open="calculator">🧮 <span>Calculadora</span></button><button data-open="mines">💣 <span>Buscaminas</span></button><button data-open="paint">🎨 <span>Paint 98</span></button><button data-open="snake">🐍 <span>Snake</span></button><button data-open="memory">🃏 <span>Parejas</span></button><div class="menu-divider"></div><button data-open="agenda">📅 <span>Agenda</span></button><button data-open="terminal">⬛ <span>MS-DOS</span></button><button data-open="settings">⚙️ <span>Panel de control</span></button><button data-open="about">💾 <span>Ayuda</span></button><div class="menu-divider"></div><button id="restartBtn">🔄 <span>Reiniciar escritorio</span></button></div></div>
+<div id="taskbar" class="taskbar"><button id="startButton" class="win-btn start-button" aria-haspopup="true" aria-expanded="false"><span class="win-flag">▦</span> Inicio</button><div class="taskbar-divider"></div><div id="taskButtons" class="task-buttons"></div><button id="clock" class="tray" title="Fecha y hora">--:--</button></div></div>
+<div id="notification" class="notification" hidden role="status"></div>
+<script defer src="app.js"></script></body></html>
